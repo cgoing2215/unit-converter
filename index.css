@@ -1,6 +1,15 @@
+html {
+    background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+}
+
 body {
     margin: 0;
     font-family: inter;
+    max-width: 1000px;
 }
 
 #container {
@@ -41,16 +50,24 @@ input {
     border-radius: .25rem;
 }
 
+.top-section p {
+    font-size: .75rem;
+    color: white;
+    margin:0;
+    padding-top: .75rem;
+}
+
 button {
     display: inline-flex;
     padding: 1rem 2rem;
-    margin: 2rem;
+    margin: 1rem 0 2rem 0;
     justify-content: center;
     align-items: center;
     border-radius: 0.3125rem;
     background: #FFF;
     box-shadow: none;
     border: none;
+    flex-shrink: 2;
 }
 
 .bottom-section {
@@ -61,6 +78,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    overflow: none;
 }
 
 #calc-section {
@@ -87,11 +105,10 @@ button {
 #calc-section p {
     width: 22rem;
     height: 2rem;
-    flex-shrink: 0;
     color: #FFF;
     text-align: center;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.25rem; /* 142.857% */
+    line-height: 1.25rem; 
 }
