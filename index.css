@@ -112,3 +112,11 @@ button {
     font-weight: 400;
     line-height: 1.25rem; 
 }
+
+@media screen and (min-width: 994px) {
+    body {
+        width: 1000px;
+        align-self: center;
+        margin: auto;
+    }
+}
